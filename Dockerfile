@@ -14,7 +14,7 @@ RUN apt-get install -y build-essential autotools-dev automake libmecab2 libmecab
 WORKDIR /workspace/mecab-src
 RUN wget https://bitbucket.org/eunjeon/mecab-ko/downloads/mecab-0.996-ko-0.9.2.tar.gz
 RUN tar -zxvf mecab-0.996-ko-0.9.2.tar.gz
-WORKDIR /workspace/mecab-0.996-ko-0.9.2
+WORKDIR /workspace/mecab-src/mecab-0.996-ko-0.9.2
 RUN ./configure
 RUN make
 RUN sudo make install
